@@ -1,0 +1,149 @@
+.TH "App.SerialPortClass" 3 "Tue Feb 1 2022" "Java project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+App.SerialPortClass
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetPort\fP (SerialPort comPort)"
+.br
+.ti -1c
+.RI "void \fBopenPort\fP ()"
+.br
+.ti -1c
+.RI "\fBSerialPortClass\fP (int baudRate, SerialPort port, int parity, int flowControl, int dataBits, int stopBits)"
+.br
+.ti -1c
+.RI "\fBSerialPortClass\fP ()"
+.br
+.ti -1c
+.RI "void \fBsendDataToSTM\fP (boolean diodeStmState, boolean diodeGreenState, boolean diodeRedState)"
+.br
+.ti -1c
+.RI "int \fBgetParity\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetStopBits\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetFlowControl\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetDataBits\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetBaudRate\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static SerialPort[] \fBfillSerialComboBox\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "App\&.SerialPortClass\&.SerialPortClass (int baudRate, SerialPort port, int parity, int flowControl, int dataBits, int stopBits)"
+Konstruktor ustawiający parametry portu szeregowego\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbaudRate\fP przyjmuje wartość prędkości transmisji 
+.br
+\fIport\fP przyjmuje port jednostki centralnej 
+.br
+\fIparity\fP przyjmuje wartość parzystości 
+.br
+\fIflowControl\fP przyjmuje wartość przepływu danych 
+.br
+\fIdataBits\fP przyjmuje ilość bitów danych 
+.br
+\fIstopBits\fP przyjmuje ilość bitów stopu
+.RE
+.PP
+
+.SS "App\&.SerialPortClass\&.SerialPortClass ()"
+Konstruktor bezparametrowy\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static SerialPort[] App\&.SerialPortClass\&.fillSerialComboBox ()\fC [static]\fP"
+Metoda statyczna zwracająca listę dostępnych portów\&.
+.PP
+\fBReturns\fP
+.RS 4
+Tablica dostępnych portów
+.RE
+.PP
+
+.SS "int App\&.SerialPortClass\&.getBaudRate ()"
+Getter wartości baudRate
+.PP
+\fBReturns\fP
+.RS 4
+wartość baudRate
+.RE
+.PP
+
+.SS "int App\&.SerialPortClass\&.getDataBits ()"
+Getter wartości dataBits
+.PP
+\fBReturns\fP
+.RS 4
+wartość dataBits
+.RE
+.PP
+
+.SS "int App\&.SerialPortClass\&.getFlowControl ()"
+Getter wartości flowControl
+.PP
+\fBReturns\fP
+.RS 4
+wartość flowControl
+.RE
+.PP
+
+.SS "int App\&.SerialPortClass\&.getParity ()"
+Getter wartości parity
+.PP
+\fBReturns\fP
+.RS 4
+wartość parity
+.RE
+.PP
+
+.SS "int App\&.SerialPortClass\&.getStopBits ()"
+Getter wartości stopBits
+.PP
+\fBReturns\fP
+.RS 4
+wartość stopBits
+.RE
+.PP
+
+.SS "void App\&.SerialPortClass\&.openPort ()"
+Metoda otwierająca port szeregowy\&.
+.SS "void App\&.SerialPortClass\&.sendDataToSTM (boolean diodeStmState, boolean diodeGreenState, boolean diodeRedState)"
+Metoda wysyłająca ramkę danych do portu szeregowego\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdiodeStmState\fP - stan diody wewnętrznej STM 
+.br
+\fIdiodeGreenState\fP - stan diody zielonej płytki prototypowej 
+.br
+\fIdiodeRedState\fP - stan diody czerwonej płytki prototypowej
+.RE
+.PP
+
+.SS "void App\&.SerialPortClass\&.setPort (SerialPort comPort)"
+Setter portu COM
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Java project from the source code\&.

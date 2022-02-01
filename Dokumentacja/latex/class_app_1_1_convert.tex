@@ -1,0 +1,58 @@
+\hypertarget{class_app_1_1_convert}{}\doxysection{App.\+Convert Class Reference}
+\label{class_app_1_1_convert}\index{App.Convert@{App.Convert}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_app_1_1_convert_a172db541216fb49fec8c3254eb9a649d}{flow\+Control\+Convert}} (int cb\+Index)
+\item 
+int \mbox{\hyperlink{class_app_1_1_convert_a52d6386b1a2e9cef1d8c29b227dc4f7c}{baud\+Rate\+Convert}} (int cb\+Index)
+\item 
+boolean \mbox{\hyperlink{class_app_1_1_convert_aedaacdcd9e9993d725aa3f2565b47ed7}{compare}} (byte\mbox{[}$\,$\mbox{]} byte1, byte\mbox{[}$\,$\mbox{]} byte2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_convert_a52d6386b1a2e9cef1d8c29b227dc4f7c}\label{class_app_1_1_convert_a52d6386b1a2e9cef1d8c29b227dc4f7c}} 
+\index{App.Convert@{App.Convert}!baudRateConvert@{baudRateConvert}}
+\index{baudRateConvert@{baudRateConvert}!App.Convert@{App.Convert}}
+\doxysubsubsection{\texorpdfstring{baudRateConvert()}{baudRateConvert()}}
+{\footnotesize\ttfamily int App.\+Convert.\+baud\+Rate\+Convert (\begin{DoxyParamCaption}\item[{int}]{cb\+Index }\end{DoxyParamCaption})}
+
+Metoda konwertująca wartości combo\+Box\textquotesingle{}a na wartości Serial\+Port(szybkosc transmisji).
+
+Metoda dokonuje konwersji indexu combo\+Box\textquotesingle{}a do wartości odpowiadającej baud\+Rate
+
+\begin{DoxyReturn}{Returns}
+baud\+Rate value
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_convert_aedaacdcd9e9993d725aa3f2565b47ed7}\label{class_app_1_1_convert_aedaacdcd9e9993d725aa3f2565b47ed7}} 
+\index{App.Convert@{App.Convert}!compare@{compare}}
+\index{compare@{compare}!App.Convert@{App.Convert}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily boolean App.\+Convert.\+compare (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{byte1,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{byte2 }\end{DoxyParamCaption})}
+
+Metoda porównująca ramki danych.
+
+Metoda porównuje ostatnio wysłaną ramkę z aktualną oraz zwraca status zmiany
+
+\begin{DoxyReturn}{Returns}
+Status zmiany danych
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_convert_a172db541216fb49fec8c3254eb9a649d}\label{class_app_1_1_convert_a172db541216fb49fec8c3254eb9a649d}} 
+\index{App.Convert@{App.Convert}!flowControlConvert@{flowControlConvert}}
+\index{flowControlConvert@{flowControlConvert}!App.Convert@{App.Convert}}
+\doxysubsubsection{\texorpdfstring{flowControlConvert()}{flowControlConvert()}}
+{\footnotesize\ttfamily int App.\+Convert.\+flow\+Control\+Convert (\begin{DoxyParamCaption}\item[{int}]{cb\+Index }\end{DoxyParamCaption})}
+
+Metoda konwertująca wartości combo\+Box\textquotesingle{}a na wartości Serial\+Port(kontrola przepływu).
+
+Metoda dokonuje konwersji indexu combo\+Box\textquotesingle{}a do wartości odpowiadającej flow\+Control
+
+\begin{DoxyReturn}{Returns}
+flow\+Control value value
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App/\mbox{\hyperlink{_convert_8java}{Convert.\+java}}\end{DoxyCompactItemize}

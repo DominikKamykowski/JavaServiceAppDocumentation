@@ -1,0 +1,60 @@
+.TH "App.Convert" 3 "Tue Feb 1 2022" "Java project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+App.Convert
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBflowControlConvert\fP (int cbIndex)"
+.br
+.ti -1c
+.RI "int \fBbaudRateConvert\fP (int cbIndex)"
+.br
+.ti -1c
+.RI "boolean \fBcompare\fP (byte[] byte1, byte[] byte2)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "int App\&.Convert\&.baudRateConvert (int cbIndex)"
+Metoda konwertująca wartości comboBox'a na wartości SerialPort(szybkosc transmisji)\&.
+.PP
+Metoda dokonuje konwersji indexu comboBox'a do wartości odpowiadającej baudRate
+.PP
+\fBReturns\fP
+.RS 4
+baudRate value
+.RE
+.PP
+
+.SS "boolean App\&.Convert\&.compare (byte[] byte1, byte[] byte2)"
+Metoda porównująca ramki danych\&.
+.PP
+Metoda porównuje ostatnio wysłaną ramkę z aktualną oraz zwraca status zmiany
+.PP
+\fBReturns\fP
+.RS 4
+Status zmiany danych
+.RE
+.PP
+
+.SS "int App\&.Convert\&.flowControlConvert (int cbIndex)"
+Metoda konwertująca wartości comboBox'a na wartości SerialPort(kontrola przepływu)\&.
+.PP
+Metoda dokonuje konwersji indexu comboBox'a do wartości odpowiadającej flowControl
+.PP
+\fBReturns\fP
+.RS 4
+flowControl value value
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Java project from the source code\&.

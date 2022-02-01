@@ -1,0 +1,161 @@
+\hypertarget{class_app_1_1_serial_port_class}{}\doxysection{App.\+Serial\+Port\+Class Class Reference}
+\label{class_app_1_1_serial_port_class}\index{App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_app_1_1_serial_port_class_ac204e3839929fae8468f970383b67a18}{set\+Port}} (Serial\+Port com\+Port)
+\item 
+void \mbox{\hyperlink{class_app_1_1_serial_port_class_af9f02e1feef2025d48acd5223e724c79}{open\+Port}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_serial_port_class_aa44fdb5964fd6c73aaf74ac0737b3711}{Serial\+Port\+Class}} (int baud\+Rate, Serial\+Port port, int parity, int flow\+Control, int data\+Bits, int stop\+Bits)
+\item 
+\mbox{\hyperlink{class_app_1_1_serial_port_class_a5513873faa7651c70565991074f37f09}{Serial\+Port\+Class}} ()
+\item 
+void \mbox{\hyperlink{class_app_1_1_serial_port_class_adaef63629bdb118426686f1da00cd82b}{send\+Data\+To\+STM}} (boolean diode\+Stm\+State, boolean diode\+Green\+State, boolean diode\+Red\+State)
+\item 
+int \mbox{\hyperlink{class_app_1_1_serial_port_class_a5cbebc9117da9dc9ba36043bf2e5fc59}{get\+Parity}} ()
+\item 
+int \mbox{\hyperlink{class_app_1_1_serial_port_class_aff3e6e115e883dfb6f0ae1a5fa1fc9a8}{get\+Stop\+Bits}} ()
+\item 
+int \mbox{\hyperlink{class_app_1_1_serial_port_class_a0eb86569465386977f64c83bd0f072fb}{get\+Flow\+Control}} ()
+\item 
+int \mbox{\hyperlink{class_app_1_1_serial_port_class_a2eb234889a737164df000af3a15a1cf8}{get\+Data\+Bits}} ()
+\item 
+int \mbox{\hyperlink{class_app_1_1_serial_port_class_ad8edee04d1f67f58560d95762da7a63a}{get\+Baud\+Rate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Serial\+Port\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_app_1_1_serial_port_class_a1d11214aab9bfb077289d7c235e9b483}{fill\+Serial\+Combo\+Box}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_aa44fdb5964fd6c73aaf74ac0737b3711}\label{class_app_1_1_serial_port_class_aa44fdb5964fd6c73aaf74ac0737b3711}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!SerialPortClass@{SerialPortClass}}
+\index{SerialPortClass@{SerialPortClass}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{SerialPortClass()}{SerialPortClass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily App.\+Serial\+Port\+Class.\+Serial\+Port\+Class (\begin{DoxyParamCaption}\item[{int}]{baud\+Rate,  }\item[{Serial\+Port}]{port,  }\item[{int}]{parity,  }\item[{int}]{flow\+Control,  }\item[{int}]{data\+Bits,  }\item[{int}]{stop\+Bits }\end{DoxyParamCaption})}
+
+Konstruktor ustawiający parametry portu szeregowego. 
+\begin{DoxyParams}{Parameters}
+{\em baud\+Rate} & przyjmuje wartość prędkości transmisji \\
+\hline
+{\em port} & przyjmuje port jednostki centralnej \\
+\hline
+{\em parity} & przyjmuje wartość parzystości \\
+\hline
+{\em flow\+Control} & przyjmuje wartość przepływu danych \\
+\hline
+{\em data\+Bits} & przyjmuje ilość bitów danych \\
+\hline
+{\em stop\+Bits} & przyjmuje ilość bitów stopu\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_a5513873faa7651c70565991074f37f09}\label{class_app_1_1_serial_port_class_a5513873faa7651c70565991074f37f09}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!SerialPortClass@{SerialPortClass}}
+\index{SerialPortClass@{SerialPortClass}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{SerialPortClass()}{SerialPortClass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily App.\+Serial\+Port\+Class.\+Serial\+Port\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Konstruktor bezparametrowy.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_a1d11214aab9bfb077289d7c235e9b483}\label{class_app_1_1_serial_port_class_a1d11214aab9bfb077289d7c235e9b483}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!fillSerialComboBox@{fillSerialComboBox}}
+\index{fillSerialComboBox@{fillSerialComboBox}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{fillSerialComboBox()}{fillSerialComboBox()}}
+{\footnotesize\ttfamily static Serial\+Port\mbox{[}$\,$\mbox{]} App.\+Serial\+Port\+Class.\+fill\+Serial\+Combo\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Metoda statyczna zwracająca listę dostępnych portów.
+
+\begin{DoxyReturn}{Returns}
+Tablica dostępnych portów
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_ad8edee04d1f67f58560d95762da7a63a}\label{class_app_1_1_serial_port_class_ad8edee04d1f67f58560d95762da7a63a}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!getBaudRate@{getBaudRate}}
+\index{getBaudRate@{getBaudRate}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{getBaudRate()}{getBaudRate()}}
+{\footnotesize\ttfamily int App.\+Serial\+Port\+Class.\+get\+Baud\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter wartości baud\+Rate
+
+\begin{DoxyReturn}{Returns}
+wartość baud\+Rate
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_a2eb234889a737164df000af3a15a1cf8}\label{class_app_1_1_serial_port_class_a2eb234889a737164df000af3a15a1cf8}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!getDataBits@{getDataBits}}
+\index{getDataBits@{getDataBits}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{getDataBits()}{getDataBits()}}
+{\footnotesize\ttfamily int App.\+Serial\+Port\+Class.\+get\+Data\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter wartości data\+Bits
+
+\begin{DoxyReturn}{Returns}
+wartość data\+Bits
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_a0eb86569465386977f64c83bd0f072fb}\label{class_app_1_1_serial_port_class_a0eb86569465386977f64c83bd0f072fb}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!getFlowControl@{getFlowControl}}
+\index{getFlowControl@{getFlowControl}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{getFlowControl()}{getFlowControl()}}
+{\footnotesize\ttfamily int App.\+Serial\+Port\+Class.\+get\+Flow\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter wartości flow\+Control
+
+\begin{DoxyReturn}{Returns}
+wartość flow\+Control
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_a5cbebc9117da9dc9ba36043bf2e5fc59}\label{class_app_1_1_serial_port_class_a5cbebc9117da9dc9ba36043bf2e5fc59}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!getParity@{getParity}}
+\index{getParity@{getParity}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{getParity()}{getParity()}}
+{\footnotesize\ttfamily int App.\+Serial\+Port\+Class.\+get\+Parity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter wartości parity
+
+\begin{DoxyReturn}{Returns}
+wartość parity
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_aff3e6e115e883dfb6f0ae1a5fa1fc9a8}\label{class_app_1_1_serial_port_class_aff3e6e115e883dfb6f0ae1a5fa1fc9a8}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!getStopBits@{getStopBits}}
+\index{getStopBits@{getStopBits}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{getStopBits()}{getStopBits()}}
+{\footnotesize\ttfamily int App.\+Serial\+Port\+Class.\+get\+Stop\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter wartości stop\+Bits
+
+\begin{DoxyReturn}{Returns}
+wartość stop\+Bits
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_af9f02e1feef2025d48acd5223e724c79}\label{class_app_1_1_serial_port_class_af9f02e1feef2025d48acd5223e724c79}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!openPort@{openPort}}
+\index{openPort@{openPort}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{openPort()}{openPort()}}
+{\footnotesize\ttfamily void App.\+Serial\+Port\+Class.\+open\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda otwierająca port szeregowy.\mbox{\Hypertarget{class_app_1_1_serial_port_class_adaef63629bdb118426686f1da00cd82b}\label{class_app_1_1_serial_port_class_adaef63629bdb118426686f1da00cd82b}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!sendDataToSTM@{sendDataToSTM}}
+\index{sendDataToSTM@{sendDataToSTM}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{sendDataToSTM()}{sendDataToSTM()}}
+{\footnotesize\ttfamily void App.\+Serial\+Port\+Class.\+send\+Data\+To\+STM (\begin{DoxyParamCaption}\item[{boolean}]{diode\+Stm\+State,  }\item[{boolean}]{diode\+Green\+State,  }\item[{boolean}]{diode\+Red\+State }\end{DoxyParamCaption})}
+
+Metoda wysyłająca ramkę danych do portu szeregowego. 
+\begin{DoxyParams}{Parameters}
+{\em diode\+Stm\+State} & -\/ stan diody wewnętrznej STM \\
+\hline
+{\em diode\+Green\+State} & -\/ stan diody zielonej płytki prototypowej \\
+\hline
+{\em diode\+Red\+State} & -\/ stan diody czerwonej płytki prototypowej\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_app_1_1_serial_port_class_ac204e3839929fae8468f970383b67a18}\label{class_app_1_1_serial_port_class_ac204e3839929fae8468f970383b67a18}} 
+\index{App.SerialPortClass@{App.SerialPortClass}!setPort@{setPort}}
+\index{setPort@{setPort}!App.SerialPortClass@{App.SerialPortClass}}
+\doxysubsubsection{\texorpdfstring{setPort()}{setPort()}}
+{\footnotesize\ttfamily void App.\+Serial\+Port\+Class.\+set\+Port (\begin{DoxyParamCaption}\item[{Serial\+Port}]{com\+Port }\end{DoxyParamCaption})}
+
+Setter portu COM
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+App/\mbox{\hyperlink{_serial_port_class_8java}{Serial\+Port\+Class.\+java}}\end{DoxyCompactItemize}
